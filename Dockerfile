@@ -3,7 +3,7 @@ FROM mysql:8.0.18
 MAINTAINER baiy(go.111@live.com)
 
 ENV TZ=Asia/Shanghai
-ENV MYSQL_ROOT_PASSWORD root
+ENV MYSQL_ROOT_PASSWORD mysqlpassword
 
 RUN ln -sf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
